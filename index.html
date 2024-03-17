@@ -1,87 +1,145 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel</title>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #242020;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+<!DOCTYPE HTML>
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20%;
-    }
+<html>
+	<head>
+		<title>SUITS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpUnJaVu3aHIyVp3o73Y42vuE70VmRmKY99w&usqp=CAU" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
 
-    .box {
-        width: 60%; /* Largura da div em porcentagem */
-        background-color: #000;
-        border-radius: 20px;
-        padding: 20px;
-        margin-bottom: 10%;
-    }
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">SUITS</a> by Gabriel da Silva Batista</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Páginas</a>
+								<ul>
+									<li><a href="generic.html">Institucional</a></li>
+									<li><a href="products.html">Serviços</li>
+									<li><a href="partners.html">Parceiros</li>
+									<li><a href="contact.html">Contato</a></li>
+									
+									
+								</ul>
+							</li>
+							<li><a href="https://www.instagram.com/gabriel.leopoldob/" class="button" target="_blank">Gabriel Batista</a></li>
+						</ul>
+					</nav>
+				</header>
 
-    .box:first-child {
-        color: #555; /* Cor de texto suave */
-        font-size: 20px;
-        text-align: center;
-    }
+			<!-- Banner -->
+				<section id="banner">
+					<h2>SUITS</h2>
+					<p>Nossa paixão, seu sucesso!</p>
+					<ul class="actions special">
+						<li><a href="#main" class="button primary">Saiba mais!</a></li>
+						<li><a href="generic.html" class="button">Institucional</a></li>
+					</ul>
+				</section>
 
-    input[type="text"], input[type="submit"] {
-        width: 80%; /* Largura do input em porcentagem */
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        border: none;
-        font-size: 16px;
-    }
+			<!-- Main -->
+				<section id="main" class="container">
 
-    input[type="submit"] {
-        background-color: #44323f; /* Cor do botão */
-        color: white;
-        cursor: pointer;
-        width: 80%;
-    }
+					<section class="box special">
+						<header class="major">
+							<h2>Bem-vindo à Suits Advocacia.</h2>
+							<p>Na Suits Advocacia, nossa paixão é garantir seu sucesso legal e ajudar
+								você a alcançar seus <br>objetivos jurídicos. Acreditamos que cada cliente merece
+								uma abordagem personalizada <br>para suas necessidades legais.</p>
+						</header>
+						<span class="image featured"><img src="images/banner.png" alt="" /></span>
+					</section>
 
-    @media only screen and (max-width: 600px) {
-        .container {
-            margin-bottom: 10%;
-           
-        }
-        .box {
-            width: 80%; /* Largura da div em porcentagem */
-        }
-    }
+					<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-bolt accent2"></span>
+								<h3>Qualidade Inigualável:</h3>
+								<p>Na Suits Advocacia, nossa missão é oferecer excelência em cada serviço jurídico que prestamos. Trabalhamos em parceria com profissionais experientes, garantindo que cada caso atenda aos mais altos padrões da indústria legal.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-chart-area accent3"></span>
+								<h3>Variedade Abrangente:</h3>
+								<p>Compreendemos que cada cliente é único, e é por isso que nossa ampla gama de serviços jurídicos atende a diversas necessidades. Se você é um empresário em busca de consultoria jurídica, um particular em busca de assistência legal ou alguém que busca soluções legais personalizadas, a Suits Advocacia tem a solução ideal para você.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-cloud accent4"></span>
+								<h3>Orientação Especializada:</h3>
+								<p>Na Suits Advocacia, não somos apenas prestadores de serviços jurídicos; somos seus parceiros na busca por soluções legais eficazes. Nossa equipe de especialistas em direito está pronta para responder às suas perguntas, oferecer recomendações e auxiliá-lo na criação de um plano jurídico personalizado.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-lock accent5"></span>
+								<h3>Compromisso com a Satisfação do Cliente:</h3>
+								<p>A satisfação do cliente é a base do nosso sucesso. Na Suits Advocacia, nos dedicamos a garantir que sua experiência legal seja excepcional. Oferecemos serviços eficientes, uma abordagem flexível em relação às suas necessidades legais e um atendimento ao cliente amigável e atencioso.</p>
+							</section>
+						</div>
+					</section>
 
-</style>
-</head>
-<body>
-    <div class="container">
-        <div class="box" style="text-align: justify; color: rgb(204, 165, 180);">
-            Oi Júlia, <br>
-            eu sei que pode parecer meio estranho, mas você parece ser uma pessoa incrível. <br>
-            Queria poder te conhecer melhor. <br><br>
-        
-            Se quiser conversar, só mandar seu número. <br><br>
-        
-            Gabriel 2 DS-A
-        </div>
-        
-        <div class="box">
-            <form action="https://formsubmit.co/gabriel.batista109@etec.sp.gov.br" method="POST">
-                <input type="text" name="name" placeholder="Número" required>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    </div>
-</body>
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/download_resized.svg" alt="" /></span>
+								<h3>Growth: Elevando seu Potencial</h3>
+								<p>A marca Growth é sinônimo de excelência no mundo da suplementação. Com uma ampla variedade de produtos, eles estão comprometidos em ajudar você a atingir suas metas de saúde e fitness. E como um símbolo de cuidado com a marca, a Growth optou pelo SUITS.</p>
+								<ul class="actions special">
+									<li><a href="https://www.gsuplementos.com.br/?gclid=EAIaIQobChMIq6uT5uOoggMVmJRLBR0HxwQgEAAYASAAEgKpNvD_BwE" class="button alt" target="_blank">Saiba mais!</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/ll_resized.svg" alt="" /></span>
+								<h3>Integral Médica: Alto Nível</h3>
+								<p>A Integral Médica é uma referência em suplementação de alto nível, proporcionando produtos de qualidade extrema. Com uma gama diversificada de suplementos. E como um símbolo de cuidado com a marca, a Integral Médica optou pelo SUITS.</p>
+								<ul class="actions special">
+									<li><a href="https://www.integralmedica.com.br/cupons?gclid=EAIaIQobChMI74LB4uOoggMV7qBaBR2K3gihEAAYASAAEgJiXfD_BwE" class="button alt" target="_blank">Saiba mais!</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Gabriel Batista 2023 - &copyTodos os direitos reservados   Trabalho acadêmico-sem fins lucrativos</li><li>Design: <a href="https://www.instagram.com/gabriel.leopoldob/" target="_blank">gabriel.leopoldob</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
