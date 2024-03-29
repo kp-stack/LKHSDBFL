@@ -1,82 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1f1c1c23;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-    
-        .container {
-            position: relative;
-            width: 60%; /* Largura da div em porcentagem */
-            background-color: #0000003f;
-            border-radius: 20px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: -20%; /* Ajuste o valor do margin-top conforme necessário */
-        }
-    
-        input[type="text"], input[type="submit"] {
-            width: 80%; /* Largura do input em porcentagem */
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-            border: none;
-            font-size: 16px;
-            box-sizing: border-box; /* Mantém o tamanho do input consistente */
-        }
-    
-        input[type="submit"] {
-            background-color: #44323f; /* Cor do botão */
-            color: white;
-            cursor: pointer;
-            width: 80%; /* Largura do botão igual à do input */
-        }
+<!DOCTYPE HTML>
 
-        /* Ajuste o tamanho do iframe para cobrir toda a tela */
-        iframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-    </style>
-</head>
-<body>
-    <!-- Coloque aqui o caminho para o seu arquivo de animação -->
-    <iframe src="i.html" frameborder="0"></iframe>
+<html>
+	<head>
+		<title>Gymfit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAD7+/tSUlLExMTr6+u3t7dbW1tiYmKvr69mZmbQ0NAzMzNfX19WVla0tLTx8fG+vr7l5eXMzMweHh5ubm6MjIxOTk6ioqKoqKgRERGVlZVGRkZ9fX2JiYlvb2/c3NwpKSk1NTUUFBScnJwkS1UIAAAD5ElEQVR4nO3c6XqqMBSFYbHV1qmI4jwUh/u/xvNoglVIFJJ4mL73J7SbrGohRNmtFgAAAAAAAAAAAAAAAAAAAAAAAAAA+F863d3s+2a2n7YdFm9P9/fFd92Ow+LZTGZeUjh3lbE9D1PVZxNHxTM6p0ZwNXVSfKouvnFSPKNf9Rg8b+Wg+EpX/NdB8Yx2ujF4Xte6eKAvvnMw9ky6+jF4nu0pofOsuP3fL5N2fLzFuRvz50O5cWRZfSTrDOf+rfp5ER/SSYCXluJgp4FysxdZFY9kleXj5sFJuflN5KuVOnv7YvvcqvhcFPGT2ydi+9GqeEbyWL30nm/x3rWqLt6P3+kdPc3f9Q3E1Soc6/asFXsyG4sciuvq+KTb41ygfaU69mfTJyXEqxtYFNeIAr8X6wZRfK34UPxo21lC1fTvI75eREH3NiL/MiIb403yirRergpNuFqukyPaWPxbaOdPxSVUMp4rpm8fSprQm5kdbfSkZMkSms2k9s8qli2hyTwjnj554agfG/3dmBaZUDmiKPex+uIX1937o7WDEiQMHkckz639vIeSc7ND8kzcCQtOmJpMjQ9iR975XE/32g8KTjhI7ZAjSk3WX9hpc/wUmvBHsUfM5/IuAIh/Q9WldFNoQtVylJiY5L0mfl1/S7Vq4BeaUPVeFDPlr5yHIiEJDZGQhDmQkISGSEjCHOqfcGSe0MGat0nCzEs1g8+rrXlC/9Ocb55wKyqk7x8fxyg/+okZJXTAJOHNsy9MDJJHqmRC1TqAFKWOVNGEXqRJmPxEoLoJ1+qAiu/IVDWhd1YmPIidx5+L0Dzh4sfcwjxheC1wFAUOqoByhVQu9VT2eiivBqrVU3EijRdcKzunGYt3n+p0KhIeZfHKJmwfXyQcVj7hkIQkJGHpE9b/XFrn66Gc08iP/Os4p2kdxL76zksbcG9R//vDBtzjtwbJV7GaCdfagA1Ya7uo+Xrpn8peDzOr7JwmMxKS0BAJSZgDCUloiIQkzKH+Cav0PW/xBHLe73nX/7v68kZN+3RD9Z+3KO8zM8nyps/M1P+5pwY8u9ZKLEol1OD5wwY8Q9qA54Bvj+iVPqGig0VW401yFfxU+PP4p8SIrJ7Hv3jsqTApQU+FyUNPhTe0AqldX4wU0cHkVOPeJvXvT6PtMSTHUP0eQ7c+UVPlZi+yKl6KPlGt+Dy9vev1tXfd6+uwv+v1tY0P6WT8rz3t12Z5cSpFv7anPffsz+Zl6LnXgL6JxfS+1HxH5l0m6ZcxdNd+U9G/9Pc/9y9tJXrQ9mdz5z1o+8X2oAUAAAAAAAAAAAAAAAAAAAAAAAAAoLn+AcBBUuGKBVWsAAAAAElFTkSuQmCC" type="image/x-icon">
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
 
-    <div class="container">
-        <div class="box" style="text-align: justify; color: rgb(204, 165, 180);">
-            Oi Juliany, <br>
-            Eu sei que pode parecer meio estranho mas você parece ser uma pessoa legal; <br>
-            constantemente nos encontramos mas nunca trocamos uma palavra sequer. <br><br>
-            Queria deixar de ser apenas um "rosto conhecido". <br><br> 
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">GYMFIT</a> by Gabriel da Silva Batista</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Páginas</a>
+								<ul>
+									<li><a href="generic.html">Institucional</a></li>
+									<li><a href="products.html">Produtos</li>
+									<li><a href="contact.html">Contato</a></li>
+									
+									
+								</ul>
+							</li>
+							<li><a href="https://www.instagram.com/gabriel.leopoldob/" class="button" target="_blank">Gabriel Batista</a></li>
+						</ul>
+					</nav>
+				</header>
 
+			<!-- Banner -->
+				<section id="banner">
+					<h2>GYMFIT</h2>
+					<p>Maior custo benefício do mercado!</p>
+					<ul class="actions special">
+						<li><a href="#main" class="button primary">Saiba mais!</a></li>
+						<li><a href="generic.html" class="button">Institucional</a></li>
+					</ul>
+				</section>
 
+			<!-- Main -->
+				<section id="main" class="container">
 
-        
-             <br><br>
-        
-            Gabriel 2 DS-A
-        </div>
-        
-       
-    </div>
-</body>
+					<section class="box special">
+						<header class="major">
+							<h2>Bem-vindo à GymFit</h2>
+							<p>Na GymFit de Suplementação, nossa paixão é impulsionar seu desempenho e ajudar <br>você a atingir seus objetivos de saúde e fitness. Acreditamos que cada indivíduo merece <br>uma abordagem personalizada para o seu bem-estar.</p>
+						</header>
+						<span class="image featured"><img src="images/Gymfit (1).png" alt="" /></span>
+					</section>
+
+					<section class="box special features">
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-bolt accent2"></span>
+								<h3>Qualidade Inigualável:</h3>
+								<p>Na GymFit, nossa missão é entregar excelência em cada suplemento que oferecemos. Trabalhamos em parceria com fabricantes de renome, garantindo que cada produto atenda aos mais altos padrões da indústria.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-chart-area accent3"></span>
+								<h3>Variedade Abrangente:</h3>
+								<p>Compreendemos que cada pessoa é única, e é por isso que nossa extensa gama de suplementos atende a diversas necessidades. Se você é um atleta em busca de ganhos de massa muscular, um entusiasta da saúde em busca de mais energia, ou alguém que busca um estilo de vida mais saudável, a GymFit tem a solução ideal para você.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<span class="icon solid major fa-cloud accent4"></span>
+								<h3>Orientação Especializada:</h3>
+								<p>Na GymFit, não somos apenas revendedores de suplementos; somos seus parceiros na busca por uma vida mais saudável e ativa. Nossa equipe de especialistas em saúde e fitness está pronta para responder às suas perguntas, oferecer recomendações e auxiliá-lo na criação de um plano de suplementação personalizado.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-lock accent5"></span>
+								<h3>Compromisso com a Satisfação do Cliente:</h3>
+								<p>Sua satisfação é a base do nosso sucesso. Na GymFit, nos dedicamos a garantir que sua experiência de compra seja excepcional. Oferecemos opções de entrega rápidas e confiáveis, uma política de devolução flexível e um atendimento ao cliente amigável e atencioso.</p>
+							</section>
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/download_resized.svg" alt="" /></span>
+								<h3>Growth: Elevando seu Potencial</h3>
+								<p>A marca Growth é sinônimo de excelência no mundo da suplementação. Com uma ampla variedade de produtos, eles estão comprometidos em ajudar você a atingir suas metas de saúde e fitness.</p>
+								<ul class="actions special">
+									<li><a href="https://www.gsuplementos.com.br/?gclid=EAIaIQobChMIq6uT5uOoggMVmJRLBR0HxwQgEAAYASAAEgKpNvD_BwE" class="button alt" target="_blank">Saiba mais!</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="images/ll_resized.svg" alt="" /></span>
+								<h3>Integral Médica: Alto Nível</h3>
+								<p>A Integral Médica é uma referência em suplementação de alto nível, proporcionando produtos de qualidade superior para aqueles que buscam resultados extraordinários. Com uma gama diversificada de suplementos.</p>
+								<ul class="actions special">
+									<li><a href="https://www.integralmedica.com.br/cupons?gclid=EAIaIQobChMI74LB4uOoggMV7qBaBR2K3gihEAAYASAAEgJiXfD_BwE" class="button alt" target="_blank">Saiba mais!</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Gabriel Batista 2023 - &copyTodos os direitos reservados   Trabalho acadêmico-sem fins lucrativos</li><li>Design: <a href="https://www.instagram.com/gabriel.leopoldob/" target="_blank">gabriel.leopoldob</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
